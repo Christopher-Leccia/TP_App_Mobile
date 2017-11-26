@@ -5,6 +5,15 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { CameraPage } from '../pages/camera/camera';
+import { GeolocalisationPage } from '../pages/geolocalisation/geolocalisation';
+import { ToastPage } from '../pages/toast/toast';
+import { VibrationPage } from '../pages/vibration/vibration';
+import { TextToSpeechPage } from '../pages/text-to-speech/text-to-speech';
+import { GyroscopePage } from '../pages/gyroscope/gyroscope';
+import { ShakePage } from '../pages/shake/shake';
+import { QrScannerPage } from '../pages/qr-scanner/qr-scanner';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -22,7 +31,15 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { title: 'List', component: ListPage },
+      { title: 'Geolocalisation / Google map', component : GeolocalisationPage},
+      { title: 'Camera', component : CameraPage},
+      { title: 'Toast', component : ToastPage},
+      { title: 'Vibration', component : VibrationPage},
+      { title: 'Text To Speech', component : TextToSpeechPage},
+      { title: 'Gyroscope', component : GyroscopePage},
+      { title: 'Shake', component : ShakePage},  
+      { title: 'QRScanner', component: QrScannerPage}    
     ];
 
   }

@@ -1,0 +1,28 @@
+<!--
+  Generated template for the GeolocalisationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+  	<button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Geolocalisation / Google map</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+	<p>Current latitude: {{ latitude }}<br>
+	Current longitude: {{ longitude }}<br>
+	</p>
+
+	<p>Watch: <br>
+	{{ latitude }} {{ longitude }} </p>
+  
+  <button ion-button (click)="ionViewDidLoad()">Google maps</button>  
+
+</ion-content>

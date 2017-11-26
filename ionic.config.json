@@ -1,6 +1,8 @@
 {
   "name": "WorkSpace",
-  "app_id": "aa1812c9",
+  "app_id": "09fe1c15",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }
