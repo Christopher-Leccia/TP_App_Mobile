@@ -22,8 +22,8 @@ export class GyroscopePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private gyroscope: Gyroscope) {
   	 let options: GyroscopeOptions = {
-  	frequency: 100
-  };
+  	frequency: 300
+  }
 
   this.gyroscope.watch(options)
   	.subscribe((orientation: GyroscopeOrientation) => {

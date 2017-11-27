@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Camera, CameraOptions } from '@ionic-native/Camera';
+import { Camera, CameraOptions } from '@ionic-native/camera';
 
 /**
  * Generated class for the CameraPage page.
@@ -30,7 +30,7 @@ export class CameraPage {
     mediaType: this.camera.MediaType.PICTURE
   }
 
-  TakePicture(){
+  takePicture(){
     this.camera.getPicture(this.options).then((imageData) => {
       this.base64image = "data:image/jpeg;base64," + imageData;
     }, (err) => {

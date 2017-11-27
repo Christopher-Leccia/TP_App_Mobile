@@ -24,7 +24,7 @@ export class QrScannerPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, private barcodeScanner: BarcodeScanner) {
   }
 
-  CreattionCode() {
+  CreationCode() {
   	this.CodeCree=this.QRData;
   }
 

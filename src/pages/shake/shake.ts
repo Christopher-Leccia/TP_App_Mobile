@@ -17,7 +17,7 @@ import { Shake } from '@ionic-native/shake';
 export class ShakePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private shake: Shake) {
-  	this.shake.startWatch(50).subscribe(data => {
+  	this.shake.startWatch(40).subscribe(data => {
   		alert('Shake Shake');
   		console.log('shake');
   	})
