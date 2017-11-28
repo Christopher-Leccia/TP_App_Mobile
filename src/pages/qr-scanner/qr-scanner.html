@@ -23,8 +23,8 @@
 		<ion-input type="text" [(ngModel)]="QRData"></ion-input>
 	</ion-item>
 
-	<button ion-button (click)="CreationCode()"> Creation du QR Code</button>
-	<button ion-button (click)="ScannageCode()"> Scan du Code</button>
+	<button ion-button full (click)="CreationCode()"> Creation du QR Code</button>
+	<button ion-button full icon-left (click)="ScannageCode()"><ion-icon name="qr-scanner"></ion-icon> Scan du Code</button>
 
 	<ion-card *ngIf="CodeCree">
 		<ngx-qrcode [qrc-value]="CodeCree"></ngx-qrcode>
