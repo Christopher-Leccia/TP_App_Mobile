@@ -16,12 +16,18 @@
 </ion-header>
 
 <ion-content padding>
-	<p>
-	Utilisation de la camera:
+  <p>
+	Utilisation de la camera:<br>
 
-	<button (click)="takePicture()">Prendre une photo</button>
+	<button ion-button (click)="takePicture()">Prendre une photo</button>
 
 	Dernière photo prise:
 	<img [src]="base64Image" *ngIf="base64Image"/>
-</p>
+  </p>
+
+  <p>
+  <button ion-button (click)="takeVideo()">Prendre une vidéo</button>
+  <button ion-button (click)="playVideo()">Lire la dernière vidéo prise</button>
+  </p>
+
 </ion-content>

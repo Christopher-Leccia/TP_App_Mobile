@@ -20,9 +20,13 @@
 	Current longitude: {{ longitude }}<br>
 	</p>
 
-	<p>Watch: <br>
-	{{ latitude }} {{ longitude }} </p>
+	<p>Vos positions: <br>
+	<ul>
+    <li *ngFor="let curentgeo of TabGeo">
+      <b>Latitude :</b> {{ curentgeo.latitudeY }} <b>Longitude :</b> {{ curentgeo.longitudeX }}
+    </li>
+  </ul>
   
-  <button ion-button (click)="ionViewDidLoad()">Google maps</button>  
+  <!--<button ion-button (click)="ionViewDidLoad()">Google maps</button> -->
 
 </ion-content>

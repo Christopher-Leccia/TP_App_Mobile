@@ -1,15 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
-import { Camera, CameraOptions } from '@ionic-native/camera';
+import { Camera } from '@ionic-native/camera';
 import { Geolocation } from '@ionic-native/geolocation';
 import { Vibration } from '@ionic-native/vibration';
 import { TextToSpeech } from '@ionic-native/text-to-speech';
-import { Gyroscope, GyroscopeOrientation, GyroscopeOptions } from '@ionic-native/gyroscope';
-import { GoogleMaps, GoogleMap, GoogleMapsEvent, GoogleMapOptions, CameraPosition, MarkerOptions, Marker } from '@ionic-native/google-maps';
+import { Gyroscope } from '@ionic-native/gyroscope';
 import { Shake } from '@ionic-native/shake';
 import { NgxQRCodeModule } from 'ngx-qrcode2';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+import { MediaCapture } from '@ionic-native/media-capture';
+import { StreamingMedia } from '@ionic-native/streaming-media';
 
 
 import { MyApp } from './app.component';
@@ -60,9 +61,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Vibration,
     TextToSpeech,
     Gyroscope,
-    GoogleMaps,
     Shake,
     BarcodeScanner,
+    MediaCapture,
+    StreamingMedia,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { GeolocalisationPage } from '../geolocalisation/geolocalisation';
+
 
 @Component({
   selector: 'page-home',
